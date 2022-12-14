@@ -1,0 +1,15 @@
+/Users/kamron/RiderProjects/Leetcode/Leetcode/bin/Debug/net5.0/Leetcode.deps.json
+/Users/kamron/RiderProjects/Leetcode/Leetcode/bin/Debug/net5.0/Leetcode.runtimeconfig.json
+/Users/kamron/RiderProjects/Leetcode/Leetcode/bin/Debug/net5.0/Leetcode.runtimeconfig.dev.json
+/Users/kamron/RiderProjects/Leetcode/Leetcode/bin/Debug/net5.0/Leetcode.dll
+/Users/kamron/RiderProjects/Leetcode/Leetcode/bin/Debug/net5.0/ref/Leetcode.dll
+/Users/kamron/RiderProjects/Leetcode/Leetcode/bin/Debug/net5.0/Leetcode.pdb
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.AssemblyInfoInputs.cache
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.AssemblyInfo.cs
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.csproj.CoreCompileInputs.cache
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.dll
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/ref/Leetcode.dll
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.pdb
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.genruntimeconfig.cache
+/Users/kamron/RiderProjects/Leetcode/Leetcode/obj/Debug/net5.0/Leetcode.csproj.AssemblyReference.cache

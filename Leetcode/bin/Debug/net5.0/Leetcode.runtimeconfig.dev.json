@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/kamron/.dotnet/store/|arch|/|tfm|",
+      "/Users/kamron/.nuget/packages"
+    ]
+  }
+}
