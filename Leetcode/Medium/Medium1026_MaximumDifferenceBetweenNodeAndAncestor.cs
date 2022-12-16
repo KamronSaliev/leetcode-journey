@@ -23,7 +23,9 @@ namespace Leetcode.Medium
             max = Math.Max(max, node.val);
             min = Math.Min(min, node.val);
 
-            return node.left == node.right ? max - min : Math.Max(DFS(node.left, max, min), DFS(node.right, max, min));
+            return node.left == node.right ? 
+                max - min : 
+                Math.Max(DFS(node.left, max, min), DFS(node.right, max, min));
         }
     }
 }
