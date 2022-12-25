@@ -1,4 +1,4 @@
-# Common IntelliJ Platform excludes
+.idea/
 
 # User specific
 **/.idea/**/workspace.xml
