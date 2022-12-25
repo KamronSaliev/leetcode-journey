@@ -21,29 +21,10 @@ namespace Leetcode
         
         private static void Solve()
         {
-            var n = int.Parse(Console.ReadLine()!);
- 
-            var ans = 0;
-            var sum = 0;
-            
-            for (int i = 0; i < n; i++)
-            {
-                var nums = Array.ConvertAll(Console.ReadLine()!.Trim().Split(' '), Convert.ToInt32);
- 
-                sum = 0;
-                
-                for (int j = 0; j < nums.Length; j++)
-                {
-                    sum += nums[j];
-                }
- 
-                if (sum >= 2)
-                {
-                    ans++;
-                }
-            }
- 
-            Console.WriteLine(ans);
+            var p = new Easy2511_MaximumEnemyFortsThatCanBeCaptured();
+
+            var forts = new int[] { 1, 0, 0, -1, 0, 0, 0, 0, 1 };
+            Console.WriteLine(p.CaptureForts(forts));
         }
     }
 }
