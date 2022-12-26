@@ -21,10 +21,10 @@ namespace Leetcode
         
         private static void Solve()
         {
-            var p = new Easy2511_MaximumEnemyFortsThatCanBeCaptured();
+            var p = new Easy566_ReshapeTheMatrix();
 
-            var forts = new int[] { 1, 0, 0, -1, 0, 0, 0, 0, 1 };
-            Console.WriteLine(p.CaptureForts(forts));
+            int[][] matrix = { new[]{ 1, 2 }, new[] { 3, 4 }, new[]{ 5, 6 }, new[]{ 7, 8 } };
+            Console.WriteLine(p.MatrixReshape(matrix, 4, 2));
         }
     }
 }
