@@ -26,6 +26,5 @@ namespace Leetcode.Medium
 
             return dp[^1];
         }
-
     }
 }
