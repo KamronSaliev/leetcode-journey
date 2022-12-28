@@ -13,15 +13,19 @@ namespace Leetcode.Medium
             {
                 return nums[0];
             }
+        
+            var dp = new int[nums.Length];
 
-            nums[1] = Math.Max(nums[0], nums[1]);
+            dp[0] = nums[0];
+            dp[1] = Math.Max(dp[0], nums[1]);
 
-            for (var i = 2; i < nums.Length; i++)
+            for (int i = 2; i < nums.Length; i++)
             {
-                nums[i] = Math.Max(nums[i - 1], nums[i - 2] + nums[i]);
+                dp[i] = Math.Max(dp[i - 1], dp[i - 2] + nums[i]);
             }
 
-            return nums[^1];
+            return dp[^1];
         }
+
     }
 }
