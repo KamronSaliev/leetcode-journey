@@ -20,7 +20,7 @@ namespace Leetcode.Easy
 
                 for (var j = 0; j <= index; j++)
                 {
-                    ans.Add((int)LeetcodeUtilities.GetBinomialCoefficientOptimized(index, j));
+                    ans.Add((int)CommonUtilities.GetBinomialCoefficientOptimized(index, j));
                 }
 
                 index++;

@@ -18,7 +18,7 @@ namespace Leetcode.Easy
 
                 for (var j = 0; j <= i; j++)
                 {
-                    list.Add((int)LeetcodeUtilities.GetBinomialCoefficientOptimized(i, j));
+                    list.Add((int)CommonUtilities.GetBinomialCoefficientOptimized(i, j));
                 }
 
                 ans.Add(list);

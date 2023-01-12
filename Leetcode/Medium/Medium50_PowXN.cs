@@ -9,7 +9,7 @@ namespace Leetcode.Medium
     {
         public double MyPow(double x, int n)
         {
-            return LeetcodeUtilities.PowOptimized(x, n);
+            return CommonUtilities.PowOptimized(x, n);
         }
     }
 }

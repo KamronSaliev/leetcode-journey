@@ -1,6 +1,6 @@
 namespace Leetcode.Utilities
 {
-    public static class LeetcodeUtilities
+    public static class CommonUtilities
     {
         private static int GreatestCommonDivisor(int a, int b)
         {
