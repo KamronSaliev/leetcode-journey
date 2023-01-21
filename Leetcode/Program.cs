@@ -21,10 +21,9 @@ namespace Leetcode
         
         private static void Solve()
         {
-            var p = new Easy566_ReshapeTheMatrix();
+            var p = new Medium93_RestoreIPAddresses();
 
-            int[][] matrix = { new[]{ 1, 2 }, new[] { 3, 4 }, new[]{ 5, 6 }, new[]{ 7, 8 } };
-            Console.WriteLine(p.MatrixReshape(matrix, 4, 2));
+            Console.WriteLine(string.Join(' ', p.RestoreIpAddresses("25525511135")));
         }
     }
 }
