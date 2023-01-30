@@ -9,6 +9,11 @@ namespace Leetcode.Medium
     {
         public ListNode OddEvenList(ListNode head)
         {
+            if (head == null)
+            {
+                return null;
+            }
+            
             var odd = head;
             var even = head.next;
             var evenStart = head.next;
