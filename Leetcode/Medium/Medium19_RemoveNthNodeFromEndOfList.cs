@@ -9,23 +9,23 @@ namespace Leetcode.Medium
     {
         public ListNode RemoveNthFromEnd(ListNode head, int n)
         {
-            var len = 0;
+            var length = 0;
             var start = head;
 
             while (head != null)
             {
                 head = head.next;
-                len++;
+                length++;
             }
 
-            if (len == n)
+            if (length == n)
             {
                 return start.next;
             }
 
             head = start;
 
-            for (var i = 0; i < len - n - 1; i++)
+            for (var i = 0; i < length - n - 1; i++)
             {
                 head = head.next;
             }
