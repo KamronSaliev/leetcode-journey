@@ -2,7 +2,7 @@ namespace Leetcode.Utilities
 {
     public static class CommonUtilities
     {
-        private static int GreatestCommonDivisor(int a, int b)
+        public static int GreatestCommonDivisor(int a, int b)
         {
             while (b != 0)
             {
