@@ -16,7 +16,7 @@ namespace Leetcode.Easy
 
             var gcdLength = CommonUtilities.GreatestCommonDivisor(str1.Length, str2.Length);
 
-            return str1.Substring(0, gcdLength);
+            return str1[..gcdLength];
         }
     }
 }
