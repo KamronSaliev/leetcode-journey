@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/

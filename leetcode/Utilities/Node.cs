@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Leetcode.Utilities
+namespace LeetCode.Utilities
 {
     public class Node
     {

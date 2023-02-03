@@ -1,6 +1,6 @@
 using System;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/squares-of-a-sorted-array/

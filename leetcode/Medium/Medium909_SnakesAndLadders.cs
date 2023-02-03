@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/snakes-and-ladders/

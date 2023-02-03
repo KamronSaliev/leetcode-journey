@@ -1,6 +1,6 @@
-using Leetcode.Utilities;
+using LeetCode.Utilities;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/merge-two-sorted-lists/

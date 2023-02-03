@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Leetcode.Utilities;
+using TreeNode = LeetCode.Utilities.TreeNode;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/binary-tree-level-order-traversal/

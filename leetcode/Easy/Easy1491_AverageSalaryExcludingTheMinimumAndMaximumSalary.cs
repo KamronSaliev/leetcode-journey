@@ -1,6 +1,6 @@
 using System;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/

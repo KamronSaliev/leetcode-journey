@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/palindrome-number/

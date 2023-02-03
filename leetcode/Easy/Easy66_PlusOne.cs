@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/plus-one/

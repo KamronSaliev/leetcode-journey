@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Leetcode.Utilities;
+using LeetCode.Utilities;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/

@@ -1,6 +1,6 @@
 using System;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     /// https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/

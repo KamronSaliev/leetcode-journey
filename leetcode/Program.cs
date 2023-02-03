@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Leetcode.Easy;
-using Leetcode.Medium;
+using LeetCode.Medium;
 
-namespace Leetcode
+namespace LeetCode
 {
     internal class Program
     {

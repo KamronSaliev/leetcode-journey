@@ -1,6 +1,6 @@
-﻿using Leetcode.Utilities;
+﻿using LeetCode.Utilities;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/

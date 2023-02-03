@@ -1,7 +1,7 @@
 ﻿using System;
-using Leetcode.Utilities;
+using LeetCode.Utilities;
 
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/diameter-of-binary-tree/

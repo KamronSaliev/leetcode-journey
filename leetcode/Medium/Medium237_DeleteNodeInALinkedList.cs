@@ -1,6 +1,6 @@
-using Leetcode.Utilities;
+using LeetCode.Utilities;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/delete-node-in-a-linked-list/

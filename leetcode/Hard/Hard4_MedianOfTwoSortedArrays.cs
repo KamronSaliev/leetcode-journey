@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Leetcode.Hard
+namespace LeetCode.Hard
 {
     /// <summary>
     ///     https://leetcode.com/problems/median-of-two-sorted-arrays/

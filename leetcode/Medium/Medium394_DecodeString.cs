@@ -1,6 +1,6 @@
 using System;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/decode-string/

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Leetcode.Hard
+namespace LeetCode.Hard
 {
     /// <summary>
     ///     https://leetcode.com/problems/longest-path-with-different-adjacent-characters/

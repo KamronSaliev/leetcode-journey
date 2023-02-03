@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Leetcode.Hard
+namespace LeetCode.Hard
 {
     /// <summary>
     ///     https://leetcode.com/problems/number-of-good-paths/

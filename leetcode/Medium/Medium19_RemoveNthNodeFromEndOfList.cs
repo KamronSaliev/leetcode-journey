@@ -1,6 +1,6 @@
-using Leetcode.Utilities;
+using LeetCode.Utilities;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/remove-nth-node-from-end-of-list/

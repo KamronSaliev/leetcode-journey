@@ -1,6 +1,4 @@
-using System;
-
-namespace Leetcode
+namespace LeetCode
 {
     public class Temp
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/cheapest-flights-within-k-stops/

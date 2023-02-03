@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy
+﻿namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/excel-sheet-column-title/

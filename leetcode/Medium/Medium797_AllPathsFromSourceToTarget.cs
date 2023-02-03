@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/all-paths-from-source-to-target/

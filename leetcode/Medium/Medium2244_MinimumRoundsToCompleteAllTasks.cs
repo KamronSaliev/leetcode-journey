@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Leetcode.Medium
+namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/

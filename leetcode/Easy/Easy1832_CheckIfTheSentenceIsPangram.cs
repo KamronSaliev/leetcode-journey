@@ -1,4 +1,4 @@
-namespace Leetcode.Easy
+namespace LeetCode.Easy
 {
     /// <summary>
     ///     https://leetcode.com/problems/check-if-the-sentence-is-pangram/

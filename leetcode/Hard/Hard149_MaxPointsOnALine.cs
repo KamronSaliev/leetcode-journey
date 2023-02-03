@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Leetcode.Hard
+namespace LeetCode.Hard
 {
     /// <summary>
     ///     https://leetcode.com/problems/max-points-on-a-line/
