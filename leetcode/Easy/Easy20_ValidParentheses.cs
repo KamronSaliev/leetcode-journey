@@ -38,22 +38,18 @@ namespace LeetCode.Easy
 
         private bool IsOpeningBracket(char ch)
         {
-            return ch == '(' || ch == '[' || ch == '{';
+            return ch is '(' or '[' or '{';
         }
 
         private char GetMatchingOpeningBracket(char ch)
         {
-            switch (ch)
+            return ch switch
             {
-                case ')':
-                    return '(';
-                case ']':
-                    return '[';
-                case '}':
-                    return '{';
-            }
-
-            throw new Exception();
+                ')' => '(',
+                ']' => '[',
+                '}' => '{',
+                _ => throw new Exception()
+            };
         }
     }
 }
