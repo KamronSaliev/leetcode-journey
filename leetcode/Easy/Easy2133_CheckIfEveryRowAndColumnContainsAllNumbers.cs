@@ -9,7 +9,7 @@ namespace LeetCode.Easy
     {
         public bool CheckValid(int[][] matrix)
         {
-            return CheckRowWise(matrix) || CheckColumnWise(matrix);
+            return CheckRowWise(matrix) && CheckColumnWise(matrix);
         }
 
         private bool CheckRowWise(int[][] matrix)
