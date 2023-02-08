@@ -9,31 +9,41 @@ namespace LeetCode.Easy
     {
         public bool CheckValid(int[][] matrix)
         {
+            return CheckRowWise(matrix) || CheckColumnWise(matrix);
+        }
+
+        private bool CheckRowWise(int[][] matrix)
+        {
             for (var i = 0; i < matrix.Length; i++)
             {
-                var rowHashSet = new HashSet<int>();
+                var hashSet = new HashSet<int>();
 
                 for (var j = 0; j < matrix[0].Length; j++)
                 {
-                    rowHashSet.Add(matrix[i][j]);
+                    hashSet.Add(matrix[i][j]);
                 }
 
-                if (rowHashSet.Count != matrix.Length)
+                if (hashSet.Count != matrix.Length)
                 {
                     return false;
                 }
             }
 
+            return true;
+        }
+
+        private bool CheckColumnWise(int[][] matrix)
+        {
             for (var i = 0; i < matrix.Length; i++)
             {
-                var columnHashSet = new HashSet<int>();
+                var hashSet = new HashSet<int>();
 
                 for (var j = 0; j < matrix[0].Length; j++)
                 {
-                    columnHashSet.Add(matrix[j][i]);
+                    hashSet.Add(matrix[j][i]);
                 }
 
-                if (columnHashSet.Count != matrix.Length)
+                if (hashSet.Count != matrix.Length)
                 {
                     return false;
                 }
