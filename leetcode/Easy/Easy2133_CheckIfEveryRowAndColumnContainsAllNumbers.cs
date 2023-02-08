@@ -20,12 +20,10 @@ namespace LeetCode.Easy
 
                 for (var j = 0; j < matrix[0].Length; j++)
                 {
-                    hashSet.Add(matrix[i][j]);
-                }
-
-                if (hashSet.Count != matrix.Length)
-                {
-                    return false;
+                    if (!hashSet.Add(matrix[i][j]))
+                    {
+                        return false;
+                    }
                 }
             }
 
@@ -40,12 +38,10 @@ namespace LeetCode.Easy
 
                 for (var j = 0; j < matrix[0].Length; j++)
                 {
-                    hashSet.Add(matrix[j][i]);
-                }
-
-                if (hashSet.Count != matrix.Length)
-                {
-                    return false;
+                    if (!hashSet.Add(matrix[j][i]))
+                    {
+                        return false;
+                    }
                 }
             }
 
