@@ -20,7 +20,7 @@ namespace LeetCode.Hard
 
             foreach (var idea in ideas)
             {
-                nameGroups[idea[0] - 'a'].Add(idea.Substring(1));
+                nameGroups[idea[0] - 'a'].Add(idea[1..]);
             }
 
             for (var i = 0; i < 25; i++)
