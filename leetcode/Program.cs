@@ -10,7 +10,7 @@ namespace LeetCode
             var t = 1; // by default
             // t = int.Parse(Console.ReadLine()!);
             
-            for (int i = 0; i < t; i++)
+            for (var i = 0; i < t; i++)
             {
                 Solve();
             }
@@ -18,9 +18,10 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Medium93_RestoreIPAddresses();
+            var p = new Medium54_SpiralMatrix();
 
-            Console.WriteLine(string.Join(' ', p.RestoreIpAddresses("25525511135")));
+            Console.WriteLine(string.Join(' ',
+                p.SpiralOrder(new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } })));
         }
     }
 }
