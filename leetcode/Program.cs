@@ -20,8 +20,9 @@ namespace LeetCode
         private static void Solve()
         {
             var p = new Easy989_AddToArrayFormOfInteger();
-
-            Console.WriteLine(p.AddToArrayForm(new []{1, 2, 3}, 35));
+            var ans = p.AddToArrayForm(new[] { 1, 2, 3 }, 35);
+            
+            Console.WriteLine(string.Join(" ", ans));
         }
     }
 }
