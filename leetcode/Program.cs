@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCode.Easy;
 using LeetCode.Medium;
 
 namespace LeetCode
@@ -18,10 +19,10 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Medium54_SpiralMatrix();
-
-            Console.WriteLine(string.Join(' ',
-                p.SpiralOrder(new[] { new[] { 1, 2, 3 }, new[] { 4, 5, 6 }, new[] { 7, 8, 9 } })));
+            var p = new Easy989_AddToArrayFormOfInteger();
+            var ans = p.AddToArrayForm(new[] { 1, 2, 3 }, 35);
+            
+            Console.WriteLine(string.Join(" ", ans));
         }
     }
 }
