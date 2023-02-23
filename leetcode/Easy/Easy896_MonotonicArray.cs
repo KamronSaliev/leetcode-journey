@@ -1,5 +1,8 @@
 namespace LeetCode.Easy
 {
+    /// <summary>
+    ///     https://leetcode.com/problems/monotonic-array/
+    /// </summary>
     public class Easy896_MonotonicArray
     {
         public bool IsMonotonic(int[] nums)
