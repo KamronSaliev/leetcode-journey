@@ -12,7 +12,7 @@ namespace LeetCode.Easy
             var fast = head;
             var slow = head;
 
-            while (fast != null && fast.next != null)
+            while (fast is { next: { } })
             {
                 fast = fast.next.next;
                 slow = slow.next;
