@@ -9,25 +9,20 @@ namespace LeetCode.Medium
     {
         public bool IsSubPath(ListNode head, TreeNode root)
         {
-            if (Check(head, root))
-            {
-                return true;
-            }
-
-            if (head == null)
-            {
-                return true;
-            }
-
             if (root == null)
             {
                 return false;
+            }
+
+            if (DFS(head, root))
+            {
+                return true;
             }
             
             return IsSubPath(head, root.left) || IsSubPath(head, root.right);
         }
 
-        private bool Check(ListNode head, TreeNode root)
+        private bool DFS(ListNode head, TreeNode root)
         {
             if (head == null)
             {
@@ -39,12 +34,7 @@ namespace LeetCode.Medium
                 return false;
             }
 
-            if (head.val == root.val)
-            {
-                return IsSubPath(head.next, root.left) || IsSubPath(head.next, root.right);
-            }
-
-            return false;
+            return head.val == root.val && (DFS(head.next, root.left) || DFS(head.next, root.right));
         }
     }
 }
