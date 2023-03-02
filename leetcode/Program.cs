@@ -19,10 +19,10 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Easy989_AddToArrayFormOfInteger();
-            var ans = p.AddToArrayForm(new[] { 1, 2, 3 }, 35);
+            var p = new Medium443_StringCompression();
+            var result = p.Compress(new[] { 'a', 'a', 'b', 'b', 'c', 'c', 'c' });
             
-            Console.WriteLine(string.Join(" ", ans));
+            Console.WriteLine($"result: {result}");
         }
     }
 }
