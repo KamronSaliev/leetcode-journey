@@ -1,6 +1,3 @@
-using System;
-using System.Text;
-
 namespace LeetCode.Medium
 {
     /// <summary>
@@ -10,36 +7,32 @@ namespace LeetCode.Medium
     {
         public int Compress(char[] chars)
         {
-            var result = new StringBuilder();
-            var currentChar = chars[0];
-            var counter = 1;
-            var item = string.Empty;
+            var i = 0;
+            var j = 0;
 
-            for (var i = 1; i < chars.Length; i++)
+            while (i < chars.Length)
             {
-                if (chars[i] == currentChar)
+                var current = chars[i];
+                var counter = 0;
+
+                while (i < chars.Length && chars[i] == current)
                 {
+                    i++;
                     counter++;
                 }
-                else
-                {
-                    item = counter == 1 ? $"{currentChar}" : $"{currentChar}{counter}";
-                    result.Append(item);
 
-                    currentChar = chars[i];
-                    counter = 1;
+                chars[j++] = current;
+
+                if (counter > 1)
+                {
+                    foreach (var counterChar in counter.ToString())
+                    {
+                        chars[j++] = counterChar;
+                    }
                 }
             }
 
-            item = counter == 1 ? $"{currentChar}" : $"{currentChar}{counter}";
-            result.Append(item);
-
-            for (var i = 0; i < result.Length; i++)
-            {
-                chars[i] = result[i];
-            }
-
-            return result.Length;
+            return j;
         }
     }
 }
