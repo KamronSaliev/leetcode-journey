@@ -19,8 +19,8 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Medium443_StringCompression();
-            var result = p.Compress(new[] { 'a', 'a', 'b', 'b', 'c', 'c', 'c' });
+            var p = new Medium7_ReverseInteger();
+            var result = p.Reverse(1534236469);
             
             Console.WriteLine($"result: {result}");
         }
