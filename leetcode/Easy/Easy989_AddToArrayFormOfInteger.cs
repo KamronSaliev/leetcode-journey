@@ -10,7 +10,6 @@ namespace LeetCode.Easy
         public IList<int> AddToArrayForm(int[] num, int k)
         {
             var result = new List<int>();
-
             var carry = 0;
             var i = num.Length - 1;
 
@@ -29,7 +28,6 @@ namespace LeetCode.Easy
                 }
 
                 carry = sum >= 10 ? 1 : 0;
-
                 result.Add(sum % 10);
 
                 k /= 10;
