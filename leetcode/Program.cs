@@ -19,8 +19,8 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Medium7_ReverseInteger();
-            var result = p.Reverse(1534236469);
+            var p = new Medium8_StringToInteger();
+            var result = p.MyAtoi("words and 987");
             
             Console.WriteLine($"result: {result}");
         }
