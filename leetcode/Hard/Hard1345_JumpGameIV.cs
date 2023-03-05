@@ -9,21 +9,9 @@ namespace LeetCode.Hard
     {
         public int MinJumps(int[] arr)
         {
-            var graph = new Dictionary<int, List<int>>();
-            for (var i = 0; i < arr.Length; i++)
-            {
-                if (graph.ContainsKey(arr[i]))
-                {
-                    graph[arr[i]].Add(i);
-                }
-                else
-                {
-                    graph.Add(arr[i], new List<int> { i });
-                }
-            }
-
+            var graph = BuildGraph(arr);
             var step = 0;
-
+            
             var visited = new bool[arr.Length];
             visited[0] = true;
 
@@ -61,6 +49,24 @@ namespace LeetCode.Hard
             }
 
             return 0;
+        }
+
+        private Dictionary<int, List<int>> BuildGraph(int[] arr)
+        {
+            var graph = new Dictionary<int, List<int>>();
+            for (var i = 0; i < arr.Length; i++)
+            {
+                if (graph.ContainsKey(arr[i]))
+                {
+                    graph[arr[i]].Add(i);
+                }
+                else
+                {
+                    graph.Add(arr[i], new List<int> { i });
+                }
+            }
+
+            return graph;
         }
     }
 }
