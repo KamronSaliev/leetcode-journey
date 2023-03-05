@@ -19,10 +19,12 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Medium8_StringToInteger();
-            var result = p.MyAtoi("words and 987");
+            var p = new Easy2582_PassThePillow();
             
-            Console.WriteLine($"result: {result}");
+            for (var i = 1; i <= 20; i++)
+            {
+                Console.WriteLine(p.PassThePillow(5, i));
+            }
         }
     }
 }
