@@ -4,14 +4,14 @@ using LeetCode.Utilities;
 namespace LeetCode.Medium
 {
     /// <summary>
-    /// https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+    ///     https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
     /// </summary>
     public class Medium109_ConvertSortedListToBinarySearchTree
     {
         public TreeNode SortedListToBST(ListNode head)
         {
             var nums = GetValues(head);
-            
+
             return InsertToBST(nums, 0, nums.Count - 1);
         }
 
@@ -35,7 +35,7 @@ namespace LeetCode.Medium
         private List<int> GetValues(ListNode head)
         {
             var values = new List<int>();
-            
+
             while (head != null)
             {
                 values.Add(head.val);
