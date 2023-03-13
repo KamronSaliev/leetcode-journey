@@ -19,12 +19,11 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Easy2582_PassThePillow();
-            
-            for (var i = 1; i <= 20; i++)
-            {
-                Console.WriteLine(p.PassThePillow(5, i));
-            }
+            var p = new Medium204_CountPrimes();
+
+            var result = p.CountPrimes(2);
+
+            Console.WriteLine(result);
         }
     }
 }
