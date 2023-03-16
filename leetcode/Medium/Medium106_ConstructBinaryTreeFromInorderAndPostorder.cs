@@ -36,13 +36,13 @@ namespace LeetCode.Medium
                 break;
             }
 
-            var leftSize = rootIndex - inorderLeft;
-            var rightSize = inderRight - rootIndex;
+            var left = rootIndex - inorderLeft;
+            var right = inderRight - rootIndex;
 
             root.left = buildTree(inorder, inorderLeft, rootIndex - 1,
-                postorder, postorderLeft, postorderLeft + leftSize - 1);
+                postorder, postorderLeft, postorderLeft + left - 1);
             root.right = buildTree(inorder, rootIndex + 1, inderRight,
-                postorder, postorderRight - rightSize, postorderRight - 1);
+                postorder, postorderRight - right, postorderRight - 1);
 
             return root;
         }
