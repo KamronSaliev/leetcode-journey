@@ -21,7 +21,6 @@ namespace LeetCode.Medium
             public void Insert(string word)
             {
                 var current = _root;
-                
                 foreach (var c in word)
                 {
                     if (!current.Children.TryGetValue(c, out var childNode))
@@ -38,7 +37,6 @@ namespace LeetCode.Medium
             public bool Search(string word)
             {
                 var current = _root;
-                
                 foreach (var c in word)
                 {
                     if (!current.Children.TryGetValue(c, out var childNode))
@@ -55,7 +53,6 @@ namespace LeetCode.Medium
             public bool StartsWith(string prefix)
             {
                 var current = _root;
-                
                 foreach (var c in prefix)
                 {
                     if (!current.Children.TryGetValue(c, out var child))
