@@ -10,7 +10,7 @@ namespace LeetCode.Medium
             var result = 0L;
             var count = 0L;
 
-            for (int i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
                 if (nums[i] == 0)
                 {
