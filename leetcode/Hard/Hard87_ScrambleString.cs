@@ -28,7 +28,6 @@ namespace LeetCode.Hard
                 }
             }
 
-
             for (var length = 2; length <= n; length++)
             {
                 for (var i = 0; i < n + 1 - length; i++)
@@ -45,7 +44,6 @@ namespace LeetCode.Hard
                     }
                 }
             }
-
 
             return dp[n][0][0];
         }
