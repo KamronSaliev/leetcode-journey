@@ -11,6 +11,7 @@ namespace LeetCode.Utilities
         public Node next;
 
         public IList<Node> children;
+        public IList<Node> neighbors;
 
         public Node()
         {
@@ -33,6 +34,12 @@ namespace LeetCode.Utilities
         {
             val = _val;
             children = _children;
+        }
+
+        public Node(int _val, List<Node> _neighbors)
+        {
+            val = _val;
+            neighbors = _neighbors;
         }
     }
 }
