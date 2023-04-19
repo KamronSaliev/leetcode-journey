@@ -5,6 +5,7 @@ namespace LeetCode.Medium
 {
     /// <summary>
     ///     https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
+    ///     https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/solutions/3435694/easy-to-understand-c-solution-using-dfs/
     /// </summary>
     public class Medium1372_LongestZigZagPathInABinaryTree
     {
