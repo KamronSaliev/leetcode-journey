@@ -10,7 +10,7 @@ namespace LeetCode.Hard
     {
         public bool[] DistanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries)
         {
-            var dsu = new DisjointSet(n);
+            var dsu = new DisjointSetUnion(n);
 
             for (var i = 0; i < queries.Length; i++)
             {

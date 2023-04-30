@@ -1,11 +1,11 @@
 namespace LeetCode.Utilities
 {
-    public class DisjointSet
+    public class DisjointSetUnion
     {
         private readonly int[] _parent;
         private readonly int[] _rank;
 
-        public DisjointSet(int n)
+        public DisjointSetUnion(int n)
         {
             _parent = new int[n];
             _rank = new int[n];

@@ -14,8 +14,8 @@ namespace LeetCode.Hard
 
             Array.Sort(edges, (a, b) => b[0] - a[0]);
 
-            var ufAlice = new DisjointSet(n + 1);
-            var ufBob = new DisjointSet(n + 1);
+            var ufAlice = new DisjointSetUnion(n + 1);
+            var ufBob = new DisjointSetUnion(n + 1);
 
             foreach (var edge in edges)
             {
