@@ -1,13 +1,16 @@
+using System;
+
 namespace LeetCode.Hard
 {
     /// <summary>
-    /// https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
+    ///     https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
     /// </summary>
     public class Hard1547_MinimumCostToCutAStick
     {
         public int MinCost(int n, int[] cuts)
         {
             Array.Sort(cuts);
+
             var m = cuts.Length;
             var dp = new int[m + 2, m + 2];
 
