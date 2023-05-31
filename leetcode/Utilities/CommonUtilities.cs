@@ -2,16 +2,9 @@ namespace LeetCode.Utilities
 {
     public static class CommonUtilities
     {
-        public static int GreatestCommonDivisor(int a, int b)
+        public static int GCD(int a, int b)
         {
-            while (b != 0)
-            {
-                var temp = a % b;
-                a = b;
-                b = temp;
-            }
- 
-            return a;
+            return b == 0 ? a : GCD(b, a % b);
         }
     
         public static double PowOptimized(double x, long n)

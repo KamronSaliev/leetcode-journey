@@ -14,7 +14,7 @@ namespace LeetCode.Easy
                 return string.Empty;
             }
 
-            var gcdLength = CommonUtilities.GreatestCommonDivisor(str1.Length, str2.Length);
+            var gcdLength = CommonUtilities.GCD(str1.Length, str2.Length);
 
             return str1[..gcdLength];
         }
