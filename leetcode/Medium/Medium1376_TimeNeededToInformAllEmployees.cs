@@ -31,16 +31,12 @@ namespace LeetCode.Medium
 
             while (queue.Count != 0)
             {
-                var size = queue.Count;
-                for (var i = 0; i < size; i++)
-                {
-                    var current = queue.Dequeue();
-                    result = Math.Max(result, current.Time);
+                var current = queue.Dequeue();
+                result = Math.Max(result, current.Time);
 
-                    for (var j = 0; j < graph[current.Employee].Count; j++)
-                    {
-                        queue.Enqueue((graph[current.Employee][j], current.Time + informTime[current.Employee]));
-                    }
+                foreach (var sub in graph[current.Employee])
+                {
+                    queue.Enqueue((sub, current.Time + informTime[current.Employee]));
                 }
             }
 
