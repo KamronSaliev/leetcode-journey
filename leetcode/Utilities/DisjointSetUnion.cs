@@ -2,23 +2,29 @@ namespace LeetCode.Utilities
 {
     public class DisjointSetUnion
     {
-        private readonly int[] _parent;
-        private readonly int[] _rank;
+        public int Count { get; set; }
+        
+        private readonly int[] _parents;
+        private readonly int[] _ranks;
 
         public DisjointSetUnion(int n)
         {
-            _parent = new int[n];
-            _rank = new int[n];
+            _parents = new int[n];
+            _ranks = new int[n];
+
+            Count = n;
+            
             for (var i = 0; i < n; i++)
             {
-                _parent[i] = i;
+                _parents[i] = i;
+                _ranks[i] = 1;
             }
         }
 
         public int Find(int x)
         {
-            var setX = _parent[x] == x ? x : Find(_parent[x]);
-            _parent[x] = setX;
+            var setX = _parents[x] == x ? x : Find(_parents[x]);
+            _parents[x] = setX;
             return setX;
         }
 
@@ -32,19 +38,21 @@ namespace LeetCode.Utilities
                 return false;
             }
 
-            if (_rank[setX] < _rank[setY])
+            if (_ranks[setX] < _ranks[setY])
             {
-                _parent[setX] = setY;
+                _parents[setX] = setY;
             }
-            else if (_rank[setX] > _rank[setY])
+            else if (_ranks[setX] > _ranks[setY])
             {
-                _parent[setX] = setY;
+                _parents[setX] = setY;
             }
             else
             {
-                _parent[setX] = setY;
-                _rank[setX]++;
+                _parents[setX] = setY;
+                _ranks[setX]++;
             }
+
+            Count--;
 
             return true;
         }
