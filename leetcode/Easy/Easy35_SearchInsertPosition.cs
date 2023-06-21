@@ -12,7 +12,7 @@ namespace LeetCode.Easy
 
             while (left <= right)
             {
-                var mid = (left + right) / 2;
+                var mid = left + (right - left) / 2;
 
                 if (nums[mid] == target)
                 {
