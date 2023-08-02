@@ -9,18 +9,18 @@ namespace LeetCode.Medium
     {
         public IList<IList<int>> Permute(int[] nums)
         {
-            var ans = new List<IList<int>>();
+            var result = new List<IList<int>>();
 
-            Backtrack(nums, new List<int>(), ans);
+            Backtrack(nums, new List<int>(), result);
 
-            return ans;
+            return result;
         }
 
-        private void Backtrack(int[] nums, List<int> list, IList<IList<int>> ans)
+        private void Backtrack(int[] nums, List<int> list, IList<IList<int>> result)
         {
             if (list.Count == nums.Length)
             {
-                ans.Add(new List<int>(list));
+                result.Add(new List<int>(list));
                 return;
             }
 
@@ -32,7 +32,7 @@ namespace LeetCode.Medium
                 }
 
                 list.Add(nums[i]);
-                Backtrack(nums, list, ans);
+                Backtrack(nums, list, result);
                 list.RemoveAt(list.Count - 1);
             }
         }
