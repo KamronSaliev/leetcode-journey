@@ -10,7 +10,7 @@ namespace LeetCode.Easy
     {
         public IList<IList<int>> Generate(int numRows)
         {
-            var ans = new List<IList<int>>();
+            var result = new List<IList<int>>();
 
             for (var i = 0; i < numRows; i++)
             {
@@ -21,10 +21,10 @@ namespace LeetCode.Easy
                     list.Add((int)CommonUtilities.GetBinomialCoefficientOptimized(i, j));
                 }
 
-                ans.Add(list);
+                result.Add(list);
             }
 
-            return ans;
+            return result;
         }
     }
 }
