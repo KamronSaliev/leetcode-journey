@@ -10,23 +10,23 @@ namespace LeetCode.Easy
     {
         public IList<int> GetRow(int rowIndex)
         {
-            var ans = new List<int> { 1 };
+            var result = new List<int> { 1 };
 
             var index = 0;
 
             while (index <= rowIndex)
             {
-                ans.Clear();
+                result.Clear();
 
                 for (var j = 0; j <= index; j++)
                 {
-                    ans.Add((int)CommonUtilities.GetBinomialCoefficientOptimized(index, j));
+                    result.Add((int)CommonUtilities.GetBinomialCoefficientOptimized(index, j));
                 }
 
                 index++;
             }
 
-            return ans;
+            return result;
         }
     }
 }
