@@ -15,7 +15,7 @@ namespace LeetCode.Easy
             }
 
             var max = 0;
-            var ans = 0;
+            var result = 0;
 
             for (var i = 0; i < grid[0].Length; i++)
             {
@@ -27,11 +27,11 @@ namespace LeetCode.Easy
                     }
                 }
 
-                ans += max;
+                result += max;
                 max = 0;
             }
 
-            return ans;
+            return result;
         }
     }
 }

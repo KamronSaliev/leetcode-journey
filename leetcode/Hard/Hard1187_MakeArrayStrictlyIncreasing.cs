@@ -17,9 +17,9 @@ namespace LeetCode.Hard
         {
             Array.Sort(arr2);
 
-            var answer = DFS(0, -1, arr1, arr2);
+            var result = DFS(0, -1, arr1, arr2);
 
-            return answer < MaxCost ? answer : -1;
+            return result < MaxCost ? result : -1;
         }
 
         private int DFS(int i, int prev, int[] arr1, int[] arr2)

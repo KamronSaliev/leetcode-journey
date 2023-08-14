@@ -22,14 +22,14 @@ namespace LeetCode.Easy
                 }
             }
 
-            var ans = string.Empty;
+            var result = string.Empty;
 
             for (var i = reverse.Length - 1; i >= 0; i--)
             {
-                ans += reverse[i];
+                result += reverse[i];
             }
 
-            return ans;
+            return result;
         }
     }
 }

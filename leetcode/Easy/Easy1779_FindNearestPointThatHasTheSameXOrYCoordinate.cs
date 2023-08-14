@@ -10,7 +10,7 @@ namespace LeetCode.Easy
         public int NearestValidPoint(int x, int y, int[][] points)
         {
             var min = (int)1e9;
-            var ans = -1;
+            var result = -1;
 
             for (int i = 0; i < points.Length; i++)
             {
@@ -21,12 +21,12 @@ namespace LeetCode.Easy
                     if (manhattanDistance < min)
                     {
                         min = manhattanDistance;
-                        ans = i;
+                        result = i;
                     }
                 }
             }
 
-            return ans;
+            return result;
         }
     }
 }
