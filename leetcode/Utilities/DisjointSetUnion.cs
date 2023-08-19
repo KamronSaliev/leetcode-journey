@@ -3,7 +3,7 @@ namespace LeetCode.Utilities
     public class DisjointSetUnion
     {
         public int Count { get; set; }
-        
+
         private readonly int[] _parents;
         private readonly int[] _ranks;
 
@@ -13,12 +13,17 @@ namespace LeetCode.Utilities
             _ranks = new int[n];
 
             Count = n;
-            
+
             for (var i = 0; i < n; i++)
             {
                 _parents[i] = i;
                 _ranks[i] = 1;
             }
+        }
+
+        public bool IsSameComponent(int u, int v)
+        {
+            return Find(u) == Find(v);
         }
 
         public int Find(int x)
