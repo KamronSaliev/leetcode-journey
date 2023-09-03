@@ -8,10 +8,10 @@ namespace LeetCode.Medium
         public int UniquePaths(int m, int n)
         {
             var dp = new int[m, n];
-            
-            for (int i = 0; i < m; i++)
+
+            for (var i = 0; i < m; i++)
             {
-                for (int j = 0; j < n; j++)
+                for (var j = 0; j < n; j++)
                 {
                     if (i == 0 || j == 0)
                     {
