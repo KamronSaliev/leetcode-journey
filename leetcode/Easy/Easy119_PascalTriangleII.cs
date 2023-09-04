@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using LeetCode.Utilities;
 
 namespace LeetCode.Easy
 {
@@ -10,20 +9,15 @@ namespace LeetCode.Easy
     {
         public IList<int> GetRow(int rowIndex)
         {
-            var result = new List<int> { 1 };
+            var result = new int[rowIndex + 1];
+            result[0] = 1;
 
-            var index = 0;
-
-            while (index <= rowIndex)
+            for (var i = 0; i <= rowIndex; i++)
             {
-                result.Clear();
-
-                for (var j = 0; j <= index; j++)
+                for (var j = i; j > 0; j--)
                 {
-                    result.Add((int)CommonUtilities.GetBinomialCoefficientOptimized(index, j));
+                    result[j] += result[j - 1];
                 }
-
-                index++;
             }
 
             return result;

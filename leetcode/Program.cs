@@ -19,11 +19,12 @@ namespace LeetCode
         
         private static void Solve()
         {
-            var p = new Medium204_CountPrimes();
+            var p = new Easy119_PascalTriangleII();
 
-            var result = p.CountPrimes(2);
+            var result = p.GetRow(10);
+            var log = string.Join(" ", result);
 
-            Console.WriteLine(result);
+            Console.WriteLine(log);
         }
     }
 }
