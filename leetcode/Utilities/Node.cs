@@ -9,6 +9,7 @@ namespace LeetCode.Utilities
         public Node left;
         public Node right;
         public Node next;
+        public Node random;
 
         public IList<Node> children;
         public IList<Node> neighbors;
