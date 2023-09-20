@@ -17,6 +17,11 @@ namespace LeetCode.Medium
                 target += nums[i];
             }
 
+            if (target == 0)
+            {
+                return n;
+            }
+            
             var result = 0;
             var currentSum = 0;
             var left = 0;
