@@ -1,5 +1,3 @@
-using System;
-
 namespace LeetCode.Easy
 {
     /// <summary>
@@ -20,8 +18,6 @@ namespace LeetCode.Easy
             {
                 array[t[i] - 'a']++;
             }
-
-            Console.WriteLine(string.Join(" ", array));
 
             var addedLetter = 'a';
 
