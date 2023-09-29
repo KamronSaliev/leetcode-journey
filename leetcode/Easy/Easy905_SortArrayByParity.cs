@@ -8,7 +8,7 @@ namespace LeetCode.Easy
         public int[] SortArrayByParity(int[] nums)
         {
             var i = 0;
-            var j = nums.Length;
+            var j = nums.Length - 1;
 
             while (i < j)
             {
