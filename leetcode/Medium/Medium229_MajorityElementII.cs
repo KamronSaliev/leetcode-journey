@@ -10,8 +10,8 @@ namespace LeetCode.Medium
     {
         public IList<int> MajorityElement(int[] nums)
         {
-            var candidate1 = 0;
-            var candidate2 = 0;
+            int? candidate1 = null;
+            int? candidate2 = null;
             var count1 = 0;
             var count2 = 0;
 
@@ -46,12 +46,18 @@ namespace LeetCode.Medium
 
             if (nums.Count(n => n == candidate1) > nums.Length / 3)
             {
-                result.Add(candidate1);
+                if (candidate1 != null)
+                {
+                    result.Add(candidate1.Value);
+                }
             }
 
             if (nums.Count(n => n == candidate2) > nums.Length / 3)
             {
-                result.Add(candidate2);
+                if (candidate2 != null)
+                {
+                    result.Add(candidate2.Value);
+                }
             }
 
             return result;
