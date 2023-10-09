@@ -9,17 +9,17 @@ namespace LeetCode.Medium
         {
             var result = new[] { -1, -1 };
 
-            result[0] = FindFirstPosition(nums, target);
-            result[1] = FindLastPosition(nums, target);
+            result[0] = FindPosition(nums, target, true);
+            result[1] = FindPosition(nums, target, false);
 
             return result;
         }
 
-        private int FindFirstPosition(int[] nums, int target)
+        private int FindPosition(int[] nums, int target, bool isFirst)
         {
             var left = 0;
             var right = nums.Length - 1;
-            var start = -1;
+            var index = -1;
 
             while (left <= right)
             {
@@ -27,8 +27,16 @@ namespace LeetCode.Medium
 
                 if (nums[mid] == target)
                 {
-                    start = mid;
-                    right = mid - 1;
+                    index = mid;
+
+                    if (isFirst)
+                    {
+                        right = mid - 1;
+                    }
+                    else
+                    {
+                        left = mid + 1;
+                    }
                 }
                 else if (target > nums[mid])
                 {
@@ -40,35 +48,7 @@ namespace LeetCode.Medium
                 }
             }
 
-            return start;
-        }
-
-        private int FindLastPosition(int[] nums, int target)
-        {
-            var left = 0;
-            var right = nums.Length - 1;
-            var end = -1;
-
-            while (left <= right)
-            {
-                var mid = left + (right - left) / 2;
-
-                if (nums[mid] == target)
-                {
-                    end = mid;
-                    left = mid + 1;
-                }
-                else if (target > nums[mid])
-                {
-                    left = mid + 1;
-                }
-                else
-                {
-                    right = mid - 1;
-                }
-            }
-
-            return end;
+            return index;
         }
     }
 }
