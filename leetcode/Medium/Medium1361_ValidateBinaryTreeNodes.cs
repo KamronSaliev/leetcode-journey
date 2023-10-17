@@ -53,31 +53,26 @@ namespace LeetCode.Medium
 
             for (var i = 0; i < n; i++)
             {
-                var left = leftChild[i];
-                var right = rightChild[i];
-
-                if (left != -1)
-                {
-                    if (!graph.ContainsKey(i))
-                    {
-                        graph[i] = new List<int>();
-                    }
-
-                    graph[i].Add(left);
-                }
-
-                if (right != -1)
-                {
-                    if (!graph.ContainsKey(i))
-                    {
-                        graph[i] = new List<int>();
-                    }
-
-                    graph[i].Add(right);
-                }
+                TryAddNode(leftChild[i], i, graph);
+                TryAddNode(rightChild[i], i, graph);
             }
 
             return graph;
+        }
+
+        private void TryAddNode(int node, int index, Dictionary<int, List<int>> graph)
+        {
+            if (node == -1)
+            {
+                return;
+            }
+
+            if (!graph.ContainsKey(index))
+            {
+                graph[index] = new List<int>();
+            }
+
+            graph[index].Add(node);
         }
 
         private int FindBinaryTreeRoot(int n, int[] leftChild, int[] rightChild)
