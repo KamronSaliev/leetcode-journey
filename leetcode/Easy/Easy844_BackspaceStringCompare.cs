@@ -14,7 +14,7 @@ namespace LeetCode.Easy
         {
             var processedString = string.Empty;
 
-            for (int i = 0; i < s.Length; i++)
+            for (var i = 0; i < s.Length; i++)
             {
                 if (s[i] == '#' && processedString.Length > 0)
                 {
