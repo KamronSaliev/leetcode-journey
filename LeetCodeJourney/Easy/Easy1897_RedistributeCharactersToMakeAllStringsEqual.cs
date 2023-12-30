@@ -16,14 +16,7 @@ namespace LeetCode.Easy
             {
                 foreach (var character in word)
                 {
-                    if (occurrences.TryGetValue(character, out var count))
-                    {
-                        occurrences[character] = count + 1;
-                    }
-                    else
-                    {
-                        occurrences.Add(character, 1);
-                    }
+                    occurrences[character] = occurrences.GetValueOrDefault(character) + 1;
                 }
             }
 
