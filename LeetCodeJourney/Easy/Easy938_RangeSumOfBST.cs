@@ -9,7 +9,7 @@ namespace LeetCode.Easy
     {
         public int RangeSumBST(TreeNode root, int low, int high)
         {
-            if (root == null)
+            if (root is null)
             {
                 return 0;
             }
