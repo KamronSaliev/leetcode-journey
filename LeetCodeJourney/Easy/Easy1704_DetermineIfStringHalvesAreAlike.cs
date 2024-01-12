@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace LeetCode.Easy
 {
     /// <summary>
@@ -33,15 +35,7 @@ namespace LeetCode.Easy
 
         private bool CheckVowel(char c, char[] vowels)
         {
-            for (var i = 0; i < vowels.Length; i++)
-            {
-                if (vowels[i] == c)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return vowels.Any(i => i == c);
         }
     }
 }
