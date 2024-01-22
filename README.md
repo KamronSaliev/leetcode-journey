@@ -5,7 +5,7 @@
 </p>
 
 ## Introduction
-This console application presents solutions for the competitive programming LeetCode problems that I have solved at https://leetcode.com/problemset/all/
+This console application presents C# solutions for the competitive programming LeetCode problems that I have solved at https://leetcode.com/problemset/all/
 
 ## Technology Stack
 `C#` `ConsoleApplication`
