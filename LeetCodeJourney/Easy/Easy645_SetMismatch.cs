@@ -13,23 +13,21 @@ namespace LeetCode.Easy
             var sum = n * (n + 1) / 2;
             var dict = new Dictionary<int, bool>(n);
             var currentSum = 0;
-            var miss = -1;
             var duplicate = -1;
 
-            for (var i = 0; i < nums.Length; i++)
+            foreach (var num in nums)
             {
-                if (!dict.ContainsKey(nums[i]))
+                if (dict.TryAdd(num, true))
                 {
-                    dict.Add(nums[i], true);
-                    currentSum += nums[i];
+                    currentSum += num;
                 }
                 else
                 {
-                    duplicate = nums[i];
+                    duplicate = num;
                 }
             }
 
-            miss = sum - currentSum;
+            var miss = sum - currentSum;
 
             return new[] { duplicate, miss };
         }
