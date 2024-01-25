@@ -12,9 +12,7 @@ namespace LeetCode.Medium
         {
             var result = 0;
             var set = new HashSet<int>();
-
             DFS(root, set, ref result);
-
             return result;
         }
 
