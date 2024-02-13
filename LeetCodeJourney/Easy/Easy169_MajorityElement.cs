@@ -11,15 +11,11 @@ namespace LeetCode.Easy
         {
             var occurrences = new Dictionary<int, int>();
 
-            for (int i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
-                if (occurrences.ContainsKey(nums[i]))
+                if (!occurrences.TryAdd(nums[i], 1))
                 {
                     occurrences[nums[i]]++;
-                }
-                else
-                {
-                    occurrences.Add(nums[i], 1);
                 }
 
                 if (occurrences[nums[i]] > nums.Length / 2)
