@@ -3,7 +3,7 @@ namespace LeetCode.Medium
     /// <summary>
     ///     https://leetcode.com/problems/bitwise-and-of-numbers-range/
     /// </summary>
-    public class Medium201_BitwiseANDOfNumbersRange
+    public class Medium201_BitwiseAndOfNumbersRange
     {
         public int RangeBitwiseAnd(int left, int right)
         {
