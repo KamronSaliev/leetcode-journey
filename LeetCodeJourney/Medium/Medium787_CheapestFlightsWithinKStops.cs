@@ -37,9 +37,9 @@ namespace LeetCode.Medium
 
             while (queue.Count > 0 && count <= k)
             {
-                var currentSize = queue.Count;
+                var size = queue.Count;
 
-                while (currentSize-- > 0)
+                while (size-- > 0)
                 {
                     var state = queue.Dequeue();
 
