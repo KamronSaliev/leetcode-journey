@@ -10,18 +10,18 @@ namespace LeetCode.Medium
     {
         public int[][] Insert(int[][] intervals, int[] newInterval)
         {
-            var res = new List<int[]>();
+            var result = new List<int[]>();
 
             foreach (var interval in intervals)
             {
                 if (interval[0] > newInterval[1])
                 {
-                    res.Add(newInterval);
+                    result.Add(newInterval);
                     newInterval = interval;
                 }
                 else if (interval[1] < newInterval[0])
                 {
-                    res.Add(interval);
+                    result.Add(interval);
                 }
                 else
                 {
@@ -30,9 +30,9 @@ namespace LeetCode.Medium
                 }
             }
 
-            res.Add(newInterval);
+            result.Add(newInterval);
 
-            return res.ToArray();
+            return result.ToArray();
         }
     }
 }
