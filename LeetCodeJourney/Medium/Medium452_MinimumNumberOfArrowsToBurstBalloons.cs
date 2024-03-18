@@ -12,7 +12,7 @@ namespace LeetCode.Medium
             Array.Sort(points, (x, y) => x[1].CompareTo(y[1]));
             
             var end = points[0][1];
-            var counter = 1;
+            var result = 1;
             
             for (var i = 1; i < points.Length; i++)
             {
@@ -21,11 +21,11 @@ namespace LeetCode.Medium
                     continue;
                 }
 
-                counter++;
+                result++;
                 end = points[i][1];
             }
 
-            return counter;
+            return result;
         }
     }
 }
