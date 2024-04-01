@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace LeetCode.Easy
 {
     /// <summary>
@@ -7,22 +9,8 @@ namespace LeetCode.Easy
     {
         public int LengthOfLastWord(string s)
         {
-            var counter = 0;
-
-            var endIndex = s.Length - 1;
-
-            while (s[endIndex] == ' ')
-            {
-                endIndex--;
-            }
-
-            while (endIndex >= 0 && s[endIndex] != ' ')
-            {
-                counter++;
-                endIndex--;
-            }
-
-            return counter;
+            var lastWord = s.Trim().Split().LastOrDefault();
+            return lastWord?.Length ?? 0;
         }
     }
 }
