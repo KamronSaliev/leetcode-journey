@@ -25,9 +25,9 @@ namespace LeetCode.Hard
 
                 for (var j = i; j != -1; j = edges[j])
                 {
-                    if (d.ContainsKey(j))
+                    if (d.TryGetValue(j, out var value))
                     {
-                        max = Math.Max(max, distance - d[j]);
+                        max = Math.Max(max, distance - value);
                     }
 
                     if (visited[j])

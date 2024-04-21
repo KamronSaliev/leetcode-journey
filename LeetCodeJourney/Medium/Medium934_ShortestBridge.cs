@@ -59,10 +59,10 @@ namespace LeetCode.Medium
             Queue<int[]> queue = new();
             var n = grid.Length;
             var visited = new bool[n, n];
-            queue.Enqueue(new int[2] { row - 1, col });
-            queue.Enqueue(new int[2] { row + 1, col });
-            queue.Enqueue(new int[2] { row, col - 1 });
-            queue.Enqueue(new int[2] { row, col + 1 });
+            queue.Enqueue(new[] { row - 1, col });
+            queue.Enqueue(new[] { row + 1, col });
+            queue.Enqueue(new[] { row, col - 1 });
+            queue.Enqueue(new[] { row, col + 1 });
             var distance = 0;
 
             while (queue.Count > 0)
